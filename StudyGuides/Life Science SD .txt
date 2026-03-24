@@ -1,0 +1,50 @@
+
+CREATE TABLE CUSTOMER (
+customer_id INT PRIMARY KEY,
+first_name VARCHAR(23),
+surname VARCHAR(23),
+address VARCHAR(50),
+contact_number VARCHAR(14),
+email VARCHAR(30)
+);
+
+CREATE TABLE EMPLOYEE (
+employee_id INT PRIMARY KEY,
+first_name VARCHAR(23),
+surname VARCHAR(23),
+contact_number VARCHAR(14),
+address VARCHAR(50),
+email VARCHAR(30)
+);
+
+CREATE TABLE DONATOR (
+donator_id INT PRIMARY KEY,
+first_name VARCHAR(23),
+surname VARCHAR(23),
+contact_number VARCHAR(14),
+email VARCHAR(30)
+);
+
+CREATE TABLE DONATION (
+donation_id INT PRIMARY KEY,
+donator_id INT PRIMARY KEY,
+donation VARCHAR(23),
+price VARCHAR(23),
+donation_date DATE
+);
+
+CREATE TABLE DELIVERY (
+delivery_id INT PRIMARY KEY,
+delivery_notes VARCHAR(60),
+dispatch_date DATE,
+delivery_date DATE
+);
+
+CREATE TABLE RETURNS (
+return_id INT PRIMARY KEY,
+return_date DATE,
+reason VARCHAR(80)
+
+
+
+);
