@@ -1,0 +1,75 @@
+﻿.content-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 60px); 
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0; /* Adds some space at the top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.facilities img, #sport-photos img {
+    max-width: 100px; /* Sets a maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+.sports-list {
+    display: flex; /* Use flexbox for the sports buttons */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 20px 0; 
+}
+
+.sport-button {
+    background-color: #007BFF; /* Set background color for buttons */
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    margin: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    text-decoration: none; 
+}
+
+    .sport-button:hover {
+        background-color: #0056b3; 
+    }
+
+
+.facilities {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 20px 0; 
+}
+
+.sport-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.back-button-container {
+    text-align: center; /* Center the back button */
+    margin-top: 20px; /* Adds space above the button */
+}

@@ -1,0 +1,193 @@
+﻿/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+    a:hover {
+        color: #0056b3;
+    }
+
+/* Admin Panel Layout */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.admin-sidebar {
+    background-color: #343a40;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .admin-sidebar a {
+        color: white;
+        padding: 10px 0;
+        display: block;
+        font-size: 1.1em;
+        transition: 0.3s;
+    }
+
+        .admin-sidebar a:hover {
+            background-color: #495057;
+            padding-left: 15px;
+        }
+
+    .admin-sidebar .sidebar-header {
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #495057;
+    }
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+    .admin-content h2 {
+        margin-top: 0;
+    }
+
+/* Top Navigation */
+.admin-navbar {
+    background-color: #007bff;
+    padding: 15px;
+    color: white;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+    .admin-navbar a {
+        color: white;
+        margin-left: 20px;
+    }
+
+        .admin-navbar a:hover {
+            color: #e2e6ea;
+        }
+
+/* Tables */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: white;
+}
+
+    .admin-table th,
+    .admin-table td {
+        padding: 12px;
+        border: 1px solid #dee2e6;
+        text-align: left;
+    }
+
+    .admin-table th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .admin-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .admin-table tr:hover {
+        background-color: #e9ecef;
+    }
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+/* Forms */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .admin-content {
+        margin-top: 20px;
+    }
+}
