@@ -1,0 +1,94 @@
+wwwroot\css\Adies.jpg
+wwwroot\css\Adies2.jpg
+wwwroot\css\admin.css
+wwwroot\css\AStyle.css
+wwwroot\css\Back1.JPEG
+wwwroot\css\Back2.JPEG
+wwwroot\css\Background.JPEG
+wwwroot\css\Background.jpg
+wwwroot\css\crosscountry1.jfif
+wwwroot\css\crosscountry2.jfif
+wwwroot\css\facility1.jpg
+wwwroot\css\facility2.jpg
+wwwroot\css\Home.css
+wwwroot\css\image7.jpg
+wwwroot\css\Logo6.png
+wwwroot\css\netball1.jpg
+wwwroot\css\netball2.jpeg
+wwwroot\css\rugby1.jfif
+wwwroot\css\rugby2.png
+wwwroot\css\site.css
+wwwroot\css\soccer1.jpg
+wwwroot\css\soccer2.jpg
+wwwroot\css\SStyle.css
+wwwroot\css\ThugLife.png
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\Past Papers\183e9c6f-a874-4396-a2a6-c4f97b2a61c2_Computer Applications Technology P1 May-June 2023 Eng.pdf
+wwwroot\uploads\Past Papers\54baab30-e932-43cb-b347-5c0cc8b521ea_Grade 12 ExamTimetable.pdf
+wwwroot\uploads\Past Papers\794e96a2-979b-4ccc-b21b-5f30414bbdee_Kgaogelo's Report (3).pdf
+wwwroot\uploads\Past Papers\a8eb5782-c2b8-4b94-8d5c-7a4d3417e4da_Kgaogelo's Report (4).pdf
+wwwroot\uploads\Past Papers\b0721bb1-6548-4f76-9cee-48290dc244bd_History P1 May-June 2023 Eng.pdf
+wwwroot\uploads\Past Papers\ba190b6a-a67c-4291-8ccc-9286f7208ca3_Kgaogelo's Report (3).pdf
+wwwroot\uploads\Past Papers\d0e1ad03-0e9b-4d9c-85a0-75ef8228f15b_crosscountry1.jfif
+wwwroot\uploads\Past Papers\d379f726-9c62-4af2-bbda-1b892f4cf636_Grade 12 ExamTimetable (1).pdf
+wwwroot\uploads\Student Reports\ff315e57-922d-4b9e-bd3c-4d3fc0bce60f_Kgaogelo's Report.pdf
+wwwroot\uploads\Timetables\a80fb27a-110a-46db-b261-a205fbec3c44_rugby1.jfif
+wwwroot\uploads\Timetables\f55f1d64-f1a6-4dde-a7be-5e4d5eda69a9_Kgaogelo's Report (4).pdf
