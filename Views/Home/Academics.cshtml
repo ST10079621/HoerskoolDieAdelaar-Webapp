@@ -1,0 +1,50 @@
+﻿@model HoerskoolDieAdelaar.Models.AcademicsViewModel
+
+<br />
+<br />
+
+<h1>Academics</h1>
+
+<div class="MContainer">
+    <button class="btn btn1" onclick="location.href='@Url.Action("PastPapers", "Home")'">Past Papers</button>
+    <button class="btn btn2" onclick="location.href='@Url.Action("Index", "TimeTable")'">Time Tables</button>
+    <button class="btn btn3" onclick="location.href='@Url.Action("StudentReport", "Home")'">Student Reports</button>
+    <button class="btn btn4" onclick="location.href='@Url.Action("StudyGuide", "Home")'">Study Guide</button>
+</div>
+
+
+
+<!-- Sticky Notes Section -->
+<div class="sticky-notes">
+    <h3>Sticky Notes</h3>
+    <div class="note" style="background-color: #006666; padding: 15px; margin: 10px 0; border-radius: 5px;">
+        <strong>Reminder:</strong> Don’t forget to submit your assignments on time!
+    </div>
+    <div class="note" style="background-color: #006666; padding: 15px; margin: 10px 0; border-radius: 5px;">
+        <strong>Tip:</strong> Review your study guides regularly for better retention.
+    </div>
+    <div class="note" style="background-color: #006666; padding: 15px; margin: 10px 0; border-radius: 5px;">
+        <strong>Announcement:</strong> The next examination period starts on March 5th. Be prepared!
+    </div>
+</div>
+
+<style>
+   
+
+    .sticky-notes {
+        margin-top: 20px;
+    }
+
+    .note {
+        font-size: 16px;
+        border-left: 5px solid #006666;
+        color: white;
+    }
+</style>
+
+
+
+
+
+
+

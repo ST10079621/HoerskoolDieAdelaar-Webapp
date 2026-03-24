@@ -1,0 +1,100 @@
+﻿
+    @model HoerskoolDieAdelaar.Models.AcademicsViewModel
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+      
+
+
+
+       
+        table {
+            width: 75%; /* makes the table use the full width of the container */
+            border-collapse: collapse; /* merges cell borders */
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black; /* adds a border to the table cells */
+            padding: 8px; /* adds padding inside the cells */
+            text-align: left; /* aligns the text to the left */
+        }
+
+        th {
+            background-color: #00b377; /* sets a background color for header */
+            color: white; /* sets text color for header */
+        }
+
+        td{
+            background-color: #423f3e;
+
+        }
+
+        tr:hover {
+            background-color: #ddd; /* highlights the row when hovered */
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+
+    
+
+
+
+    <br/>
+    <br />
+    <h1>Past Papers</h1>
+    <br />
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Past Papers</th>
+           
+        </tr>
+
+       
+
+
+        @if (Model?.PastPapers != null && Model.PastPapers.Any())
+        {
+              <td>
+                 <ul>
+                          @foreach (var paper in Model.PastPapers)
+                             {
+                                 <li>
+                                 <a href="@paper.FilePath" target="_blank">@paper.FileName</a> 
+                        
+                                    (Uploaded on @paper.UploadDate.ToShortDateString())
+
+                                <a href="~/uploads/@paper.Category/@paper.FileName" target="_blank" download="@paper.FileName">Download</a>
+                                    @paper.Id
+
+                                </li>
+                             }
+            </ul>
+            </td>
+        }
+        else
+        {
+            <td>
+                <p>No study guides available.</p>
+            </td>
+        }
+        
+
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿@model List<HoerskoolDieAdelaar.Models.Sport>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+
+    <link rel="stylesheet" href="~/css/SStyle.css" asp-append-version="true" />
+</head>
+<body>
+    
+   <div class="content-wrapper">
+    <div class="content">
+        <h1>Sport</h1>
+        <div class="director-details">
+            <p>Sports Director: Mr. Johnson</p>
+            <p>Email: johnson@school.com, Phone: 123-456-7890</p>
+            <p>Phone: 011-456-9857</p>
+        </div>
+
+
+            <h2>The Importance of Sports in School</h2>
+        <div class="importance">
+            
+            <p>Engaging in sports activities is essential for students' physical and mental well-being. It promotes teamwork, discipline, and a healthy lifestyle.</p>
+        </div>
+
+
+            <h2>Our Sports Facilities</h2>
+        <div class="facilities">
+
+            <img src="/css/facility1.jpg" alt="Facility 1">
+            <img src="/css/facility2.jpg" alt="Facility 2">
+        </div>
+
+        <div class="sports-list">
+            @foreach (var sport in Model)
+            {
+                <a class="sport-button" href="@Url.Action("Details", "Sports", new { name = sport.Name })">@sport.Name</a>
+            }
+        </div>
+    </div>
+   </div>
+
+   
+</body>
+</html>

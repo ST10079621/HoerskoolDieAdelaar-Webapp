@@ -1,0 +1,33 @@
+﻿@model HoerskoolDieAdelaar.Models.Sport
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Name - Details</title>
+    <link rel="stylesheet" href="~/css/SStyle.css" asp-append-version="true" />
+</head>
+<body>
+   <div class="content-wrapper">
+    <div class="content">
+        <h1>@Model.Name</h1>
+        <p>Teacher: @Model.Teacher</p>
+        <p>@Model.TeacherDetails</p>
+        <p>@Model.Info</p>
+        <div id="sport-photos">
+            @foreach (var photo in Model.Photos)
+            {
+                <img src="/css/@photo" alt="Photo of @Model.Name" class="sport-photo">
+            }
+        </div>
+        <div class="back-button-container">
+            <a class="sport-button" href="@Url.Action("Index", "Sports")">Back to Sports</a> 
+        </div>
+    </div>
+   </div>
+    
+</body>
+</html>
+
+

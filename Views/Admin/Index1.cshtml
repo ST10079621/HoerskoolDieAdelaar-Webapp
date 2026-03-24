@@ -1,0 +1,167 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container-fluid" style="color: white;">
+    <h2 class="text-center">Admin Dashboard</h2>
+    <br />
+    <div class="alert alert-info text-center" role="alert">
+        Welcome, Admin! Use the dashboard to manage school resources efficiently. If you have any questions, reach out to our support team.
+    </div>
+    <button class="btn6 btn-primary btn-sm w-20">
+        <a href="http://localhost:5253/Identity/Account/Login?ReturnUrl=%2F" class="btn6 btn-primary btn-sm w-20 text-light" style="text-decoration: none;">
+            Logout
+        </a>
+
+    </button>
+    <br/>
+    <br/>
+    <div class="row mt-4">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="list-group">
+                <button class="list-group-item list-group-item-action active" onclick="showSection('academics')">Academics</button>
+                <button class="list-group-item list-group-item-action" onclick="showSection('userManagement')">User Management</button>
+                <button class="list-group-item list-group-item-action" onclick="showSection('sportsManagement')">Sports Management</button>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="col-md-9">
+            <!-- Academics Section -->
+            <div id="academics" class="content-section">
+                <h3>Academics</h3>
+
+                <!-- Past Papers Form -->
+                <h4>Past Papers</h4>
+                <form asp-action="UploadDocument" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input type="file" name="file" />
+                        <input type="hidden" name="category" value="Past Papers" />
+                        <button type="submit" class="btn btn-primary mt-2">Upload Past Paper</button>
+                    </div>
+                </form>
+                <hr />
+
+                <!-- Timetables Form -->
+                <h4>Timetables</h4>
+                <form asp-action="UploadDocument" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input type="file" name="file" />
+                        <input type="hidden" name="category" value="Timetables" />
+                        <button type="submit" class="btn btn-primary mt-2">Upload Timetable</button>
+                    </div>
+                </form>
+                <hr />
+
+                <!-- Student Reports Form -->
+                <h4>Student Reports</h4>
+                <form asp-action="UploadDocument" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input type="file" name="file" />
+                        <input type="hidden" name="category" value="Student Reports" />
+                        <button type="submit" class="btn btn-primary mt-2">Upload Student Report</button>
+                    </div>
+                </form>
+                <hr />
+
+                <!-- Study Guides Form -->
+                <h4>Study Guides</h4>
+                <form asp-action="UploadDocument" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input type="file" name="file" />
+                        <input type="hidden" name="category" value="Study Guides" />
+                        <button type="submit" class="btn btn-primary mt-2">Upload Study Guide</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- User Management Section -->
+            <div id="userManagement" class="content-section" style="display: none;">
+                <h3>User Management</h3>
+
+                <form method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <select name="role" class="form-control" required>
+                            <option>Admin</option>
+                            <option>Teacher</option>
+                            <option>Student</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Add User</button>
+                </form>
+            </div>
+
+            <!-- Sports Management Section -->
+            <div id="sportsManagement" class="content-section" style="display: none;">
+                <h3>Sports User Management</h3>
+
+                <!-- Add Sports Teacher or Director Form -->
+                <form method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <select name="role" class="form-control" required>
+                            <option value="sports_teacher">Sports Teacher</option>
+                            <option value="sports_director">Sports Director</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sport">Specialty Sport</label>
+                        <input type="text" name="sport" class="form-control" placeholder="e.g., Soccer, Basketball" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" class="form-control" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2">Add Sports User</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+        <script>
+            function showSection(sectionId) {
+                // Hide all sections
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show the selected section
+                document.getElementById(sectionId).style.display = 'block';
+
+                // Remove active class from all buttons
+                document.querySelectorAll('.list-group-item').forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                // Add active class to the selected button
+                event.currentTarget.classList.add('active');
+            }
+        </script>
+    }
+</div>

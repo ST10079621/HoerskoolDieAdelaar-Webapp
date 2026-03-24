@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using HoerskoolDieAdelaar.Areas.Identity.Data
+
+@inject SignInManager<HoerskoolDieAdelaarUser> SignInManager
+@inject UserManager<HoerskoolDieAdelaarUser> UserManager
+
+
+
+
+   
+    
+
+
+
+<ul class="navdiv">
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+
+        <div class="logo"><a href="#"><img src="/css/ThugLife.png" /></a>  </div>
+
+        <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
+
+        <li class="nav-item">
+                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Academics">Academics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="" asp-controller="Sports" asp-action="Index">Sports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+        </li>
+        
+
+    <li class="nav-item">
+        <a id="manage" class="nav-light" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"> @UserManager.GetUserName(User)!</a>
+    </li>
+    <li class="nav-item">
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="logout" type="submit" class="nav-link btn9 btn-link text-light btn-outline-light w-100 btn btn-lg btn-primary ">Logout</button>
+        </form>
+    </li>
+
+
+    }
+
+
+
+
+
+</ul>

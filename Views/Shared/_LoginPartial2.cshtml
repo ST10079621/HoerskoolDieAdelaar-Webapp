@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using HoerskoolDieAdelaar.Areas.Identity.Data
+
+@inject SignInManager<HoerskoolDieAdelaarUser> SignInManager
+@inject UserManager<HoerskoolDieAdelaarUser> UserManager
+
+
+
+
+
+
+
+
+
+<ul class="navdiv">
+
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div class="logo"><a href="#"><img src="/css/Logo6.png" /></a>  </div>
+        
+        <div class="logo"><a href="#"><img src="/css/ThugLife.png" /></a>  </div>
+
+       
+
+        
+    }
+
+
+</ul>
